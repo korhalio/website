@@ -1,0 +1,11 @@
+.row.text-center
+  - for let i in this.content.fields.features
+    - var feature = this.content.fields.features[i]
+    div class=('col-md-' + (12 / this.content.fields.features.length))
+      span.fa-stack.fa-4x
+        i.fa.fa-circle.fa-stack-2x.text-primary
+        i.fa.fa-stack-1x.fa-inverse class=('fa-' + feature.fields.iconFa);
+      h4.service-heading
+        = feature.fields.heading
+      p.text-muted
+        = feature.fields.subheading

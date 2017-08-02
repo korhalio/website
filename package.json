@@ -1,0 +1,34 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-browserify": "^0.5.1",
+    "gulp-git": "^2.0.0",
+    "gulp-if": "^2.0.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-s3-upload": "^1.6.4",
+    "gulp-sass": "^3.1.0",
+    "gulp-slim": "^0.3.0",
+    "gulp-slm": "^1.1.1",
+    "gulp-uglify": "^2.0.1",
+    "merge-stream": "^1.0.1",
+    "webpack": "^2.2.1"
+  },
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "contentful": "^3.8.1",
+    "font-awesome": "^4.7.0",
+    "gulp-sass-variables": "^1.1.1",
+    "jquery": "^3.1.1",
+    "marked": "^0.3.6",
+    "slm": "^1.0.0"
+  }
+}

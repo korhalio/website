@@ -1,0 +1,28 @@
+- for (var i = 0; i < this.content.fields.members.length; i+=3)
+  .row
+    - for (var j = 0; (i + j) < this.content.fields.members.length && j < 3; j++)
+      - let member = this.content.fields.members[i + j];
+      - if (!member.fields) { continue; }
+      .col-sm-4
+        .team-member
+          img.img-responsive.img-circle src=(member.fields.picture ? member.fields.picture.fields.file.url : '')
+          h4
+            = member.fields.name
+          p.text-muted
+            = member.fields.title
+          ul.list-inline.social-buttons
+            - for let i in member.fields.social
+              - let social = member.fields.social[i]
+              li
+                a href=social.fields.url
+                  i.fa class=('fa-' + social.fields.iconFa)
+.row
+  .col-lg-8.col-lg-offset-2.text-center
+    .large.text-muted
+      p
+        | Join a team of amazing engineers on a mission to deliver <br>
+          the greatest network management platform possible. <br>
+          <br>
+      a.page-scroll.btn.btn-xl href="/careers.html"
+        | Explore Careers
+

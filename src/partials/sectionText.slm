@@ -1,0 +1,4 @@
+.row
+  .col-lg-8
+    - let e = new String(this.marked(this.content.fields.text)); e.htmlSafe = true;
+    = e

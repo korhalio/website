@@ -1,0 +1,74 @@
+doctype html
+html lang="en"
+  = partial('partials/head')
+  body#page-top.index
+    nav#mainNav.navbar.navbar-default.navbar-custom.navbar-fixed-top
+      = partial ('partials/nav')
+
+    section#intro
+      .container
+        .row
+          .col-lg-7.col-md-7.col-sm-12.col
+            h2.section-heading
+              | application container deployment for the internet of things
+            h3.section-subheading
+              p
+                | korhal is a free and open source end to end platform for IoT developers dealing with 
+                | <strong> updates, configuration, deployment, 
+                | </strong> and 
+                | <strong> monitoring </strong> 
+                | of millions of devices.
+            a.page-scroll.btn.btn-xl  href="https://github.com/korhalio/korhal"
+              | Get korhal
+
+          .col-md-5.col-md-5.col-sm-12.col style='text-align:center'
+            img.img-fluid src="/img/layers-${this.version}.png"
+
+    section#services
+      .container
+        .row
+          .col-lg-9.col-md-9.col-sm-12.col
+            h2.section-heading
+              | deploy applications, not systems
+            h3.section-subheading
+              p
+                | Separate workflows for board support updates and application updates with lightweight 
+                | containers that enclose your application and its dependencies. 
+                | korhal optimizes storage with a unique content addressable compression method, no versioning required. 
+        .row
+          .col-lg-9.col-md-9.col-sm-12.col
+            h2.section-heading
+              | production ready monitoring
+            h3.section-subheading
+              p
+                | Open cloud microservices allow you to manage millions of devices with a real time asynchronous 
+                | message queue over the mqtt protocol. Factory activation, monitoring and configuration are pluggable 
+                | microservices on both cloud and device, so you can mix and match with any other service. 
+        .row
+          .col-lg-9.col-md-9.col-sm-12.col
+            h2.section-heading
+              | works on any hardware
+            h3.section-subheading
+              p
+                | The rust programming language by mozilla allows us to build for any hardware architecture and any OS, 
+                | including <strong>android</strong>, <strong>gnu/linux</strong>, <strong>openWrt</strong> 
+                | and bare metal <strong>microcontrollers</strong>. On linux based platforms you can inject korhal 
+                | as a single binary into your existing board support package. zero dependencies. 
+
+
+    footer
+      .container
+        .row
+          .col-md-4
+            ul.list-inline.quicklinks
+              li
+                a href='/imprint.html'
+                  | Imprint
+
+
+
+  
+  script src="https://npmcdn.com/contentful@latest/browser-dist/contentful.min.js"
+  script src=("app-" + this.version + ".js")
+
+
