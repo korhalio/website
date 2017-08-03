@@ -61,10 +61,8 @@ function task_slm() {
 
 
 function task_copy() {
-    return gulp.parallel(function copy_jsoneditor() {
-        return gulp.src(['node_modules/jsoneditor/dist/img/**']).pipe(gulp.dest('dist/img'));
-    },
-    function copy_modules() {
+    return gulp.parallel(
+      function copy_modules() {
         return gulp.src(['node_modules/**/*.css'])
         .pipe(gulpif("*.css", gulp.dest('dist/node_modules/')));
     },
