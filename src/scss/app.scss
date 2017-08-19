@@ -109,6 +109,9 @@ h1, h2, h3, h4, h5, h6 {
             padding-right:0.5em;
         }
     }
+    .navbar-brand.ngate {
+        color: #eee;
+    }
     .navbar-collapse {
         border-color: fade-out(white, .02);
     }
@@ -239,6 +242,8 @@ header {
 // Global Section Styles
 
 section {
+    background-size: cover;
+    background-attachment: fixed;
     padding: 100px 0;
     h2.section-heading {
         text-align: left;
