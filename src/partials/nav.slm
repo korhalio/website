@@ -3,15 +3,10 @@
     button.navbar-toggle data-toggle="collapse" type="button" data-target="#bs-example-navbar-collapse-1"
       span.sr-only Toggle navigation
       i.fa.fa-bars
-    a.navbar-brand.ngate href="https://ngate.io"
+    a.navbar-brand.page-scroll href="http://korhal.io"
       img.brand-logo src=('/img/logo-' + this.version + '.png')
-      | ngate
-    | &nbsp;
-    a.navbar-brand.page-scroll href="/#page-top"
-      //i.fa.fa-plane aria-hidden="true"
-      //| &nbsp;&nbsp;
       span
-        | chapter of korhal
+        | korhal.io
   #bs-example-navbar-collapse-1.collapse.navbar-collapse
     ul.nav.navbar-nav.navbar-right
       li.hidden

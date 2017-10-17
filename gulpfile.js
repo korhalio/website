@@ -8,7 +8,6 @@ var gulpif      = require('gulp-if');
 var uglify      = require('gulp-uglify');
 var s3          = require('gulp-s3-upload')();
 var sassVar     = require('gulp-sass-variables');
-var contentful  = require('contentful')
 var merge       = require('merge-stream');
 var marked      = require('marked');
 

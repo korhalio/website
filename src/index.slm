@@ -66,9 +66,6 @@ html lang="en"
                   | Imprint
 
 
-
-  
-  script src="https://npmcdn.com/contentful@latest/browser-dist/contentful.min.js"
   script src=("app-" + this.version + ".js")
 
 

@@ -51,7 +51,7 @@ a.active {
 
 h1, h2, h3, h4, h5, h6 {
     @include heading-font;
-    font-weight: 200;
+    font-weight: 300;
 
     strong {
         font-weight: 400;
@@ -93,7 +93,7 @@ h1, h2, h3, h4, h5, h6 {
     background-color: $gray-darker;
     border-color: transparent;
     .navbar-brand {
-        font-weight: 200;
+        font-weight: 300;
         color: $theme-primary;
         @include script-font;
         &:hover,
@@ -104,7 +104,7 @@ h1, h2, h3, h4, h5, h6 {
         }
         .brand-logo {
             display: inline;
-            height:1em;
+            height:1.5em;
             padding-bottom:0.2em;
             padding-right:0.5em;
         }
