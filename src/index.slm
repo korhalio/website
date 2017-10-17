@@ -18,11 +18,11 @@ html lang="en"
                 | </strong> and 
                 | <strong> monitoring </strong> 
                 | of millions of devices.
-            a.page-scroll.btn.btn-xl  href="https://github.com/korhalio/korhal"
+            a.page-scroll.btn.btn-xl  href="https://github.com/korhalio"
               | Get korhal
 
-          .col-md-5.col-md-5.col-sm-12.col style='text-align:center'
-            img.img-fluid src="/img/layers-${this.version}.png"
+          .col-md-5.col-md-5.col-sm-12.col.hidden-sm.hidden-xs style='text-align:center'
+            img.img-fluid src="/img/cargoshuttle-${this.version}.png"
 
     section#services
       .container
@@ -34,7 +34,7 @@ html lang="en"
               p
                 | Separate workflows for board support updates and application updates with lightweight 
                 | containers that enclose your application and its dependencies. 
-                | korhal optimizes storage with a unique content addressable compression method, no versioning required. 
+                | korhal <strong> bolter </strong> optimizes storage with a unique content addressable compression method, no versioning required. 
         .row
           .col-lg-9.col-md-9.col-sm-12.col
             h2.section-heading
