@@ -39,16 +39,3 @@ require ('../node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js');
 })(jQuery); // End of use strict
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -3,7 +3,7 @@
     button.navbar-toggle data-toggle="collapse" type="button" data-target="#bs-example-navbar-collapse-1"
       span.sr-only Toggle navigation
       i.fa.fa-bars
-    a.navbar-brand.page-scroll href="http://korhal.io"
+    a.navbar-brand.page-scroll href="/"
       img.brand-logo src=('/img/logo-' + this.version + '.png')
       span
         | korhal.io
@@ -11,6 +11,9 @@
     ul.nav.navbar-nav.navbar-right
       li.hidden
         a href="#page-top"
+      li
+        a.page-scroll  href="/sponsoring.html"
+          | Corporate Sponsoring
       li
         a.page-scroll  href="https://github.com/korhalio"
           | Open Source

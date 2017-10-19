@@ -1,0 +1,78 @@
+doctype html
+html lang="en"
+  = partial('partials/head')
+  body#page-top.index
+    nav#mainNav.navbar.navbar-default.navbar-custom.navbar-fixed-top
+      = partial ('partials/nav')
+
+    section#intro style='background-image: url("/img/bg-${this.version}.jpg");'
+      .container
+        .row
+          .col-lg-9.col-md-9.col-sm-12.col
+            h2.section-heading
+              | Get in touch with Internet of Things Talent right in their most engaged moment.
+            h3.section-subheading
+              p
+                | If you're an established IoT company or a startup, aquiring top talent is a 
+                | challange. Become a gold sponsor to get your name and logo on github and the frontpage of every conference slide deck 
+                | presented to techies. Some of which might just be your next hire. 
+            script type="text/javascript" language="javascript"
+              // Email obfuscator script 2.1 by Tim Williams, University of Arizona
+              // Random encryption key feature coded by Andrew Moulden
+              // This code is freeware provided these four comment lines remain intact
+              // A wizard to generate this code is at http://www.jottings.com/obfuscator/
+              | { coded = "OcSnu@dvcaOB.nv";
+              |   key = "U5lzaDYJgbeWTyFmoBiOspKVN0k2ft1vEn7PjZrL3d9MXGS4HqAhIcwxu8Q6RC";
+              |   shift=coded.length;
+              |   link="";
+              |   for (i=0; i<coded.length; i++) {
+              |     if (key.indexOf(coded.charAt(i))==-1) {
+              |       ltr = coded.charAt(i);
+              |       link += (ltr);
+              |     }
+              |     else {
+              |       ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length;
+              |       link += (key.charAt(ltr));
+              |     }
+              |   }
+              | document.write("<a class='btn btn-xl' href='mailto:"+link+"'>Get in touch</a>")
+              | }
+
+    section#services
+      .container
+        .row
+          .col-lg-9.col-md-9.col-sm-12.col
+            h2.section-heading
+              | What we're doing with the money
+            h3.section-subheading
+              p
+                | Proprietary IoT platforms are costly, defocused and create more problems then they solve in a world where over 
+                | 14 thousand people contribute to the linux kernel alone. We are creating korhal as complete free and 
+                | open source community to help companies build risk-free secure and quick updates for their IoT 
+                | devices. Korhal must remain free and open in order to fundamentally change the Internet of Things 
+                | as an industry, and as a result we rely on sponsoring and grants to support the project 
+        .row
+          .col-lg-9.col-md-9.col-sm-12.col
+            h2.section-heading
+              | Be a first mover in your industry
+            h3.section-subheading
+              p
+                | Korhal aims to become the docker of Iot, to grow into a standard deployment tool that significantly offsets 
+                | the cost of IoT updates. Join early to gain a competitive edge in being able to deliver features much quicker 
+                | than any other company having to deal with full system updates. Becoming a sponsor guarantees tools will come 
+                | to your preferred platform first, and gives you significantly influence in which direction we're going as a project. 
+
+
+    footer
+      .container
+        .row
+          .col-md-4
+            ul.list-inline.quicklinks
+              li
+                a href='/imprint.html'
+                  | Legal
+
+
+  script src=("app-" + this.version + ".js")
+
+

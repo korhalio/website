@@ -79,7 +79,7 @@ html lang="en"
             ul.list-inline.quicklinks
               li
                 a href='/imprint.html'
-                  | Imprint
+                  | Legal
 
 
   script src=("app-" + this.version + ".js")
