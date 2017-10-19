@@ -10,16 +10,26 @@ html lang="en"
         .row
           .col-lg-7.col-md-7.col-sm-12.col
             h2.section-heading
-              | application container deployment for the internet of things
+              | application container deployment for the distributed internet of things
             h3.section-subheading
               p
                 | korhal is a free and open source end to end platform for IoT developers dealing with 
-                | <strong> updates, configuration, deployment, 
+                | <strong> updates, configuration, monitoring, 
                 | </strong> and 
-                | <strong> monitoring </strong> 
-                | of millions of devices.
-            a.page-scroll.btn.btn-xl  href="https://github.com/korhalio"
-              | Get korhal
+                | <strong> decentralized networking </strong> 
+                | of millions of devices on earth or in space.
+            //a.page-scroll.btn.btn-xl  href="https://github.com/korhalio"
+            //  | Get Involved
+            p
+              #mc_embed_signup
+                form action="https://korhal.us17.list-manage.com/subscribe/post?u=4efd024f4d209c6eb40082b93&amp;id=2874c5afb0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate=true
+                  .form-group
+                    label for="mce-EMAIL"
+                      |Subscribe to get notified of product launches
+                    input.form-control type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required=true
+                    div style="position: absolute; left: -5000px;" aria-hidden="true"
+                      input type="text" name="b_4efd024f4d209c6eb40082b93_2874c5afb0" tabindex="-1" value=""
+                  input.btn.btn-primary type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"
 
           .col-md-5.col-md-5.col-sm-12.col.hidden-sm.hidden-xs style='text-align:center'
             img.img-fluid src="/img/cargoshuttle-${this.version}.png"
@@ -32,18 +42,24 @@ html lang="en"
               | deploy applications, not systems
             h3.section-subheading
               p
-                | Separate workflows for board support updates and application updates with lightweight 
-                | containers that enclose your application and its dependencies. 
-                | korhal <strong> bolter </strong> optimizes storage with a unique content addressable compression method, no versioning required. 
+                | Korhal <strong> Archon </strong> and <strong> Bolter </strong> enable safe differential updates and executable code deduplication for 
+                | statically linked binaries. Separate workflows for board support package and application updates 
+                | by just updating the part you need without affecting the running system. 
         .row
-          .col-lg-9.col-md-9.col-sm-12.col
-            h2.section-heading
-              | production ready monitoring
+          .col-lg-12.col-md-12.col-sm-12.col
             h3.section-subheading
-              p
-                | Open cloud microservices allow you to manage millions of devices with a real time asynchronous 
-                | message queue over the mqtt protocol. Factory activation, monitoring and configuration are pluggable 
-                | microservices on both cloud and device, so you can mix and match with any other service. 
+              div.embed-responsive.embed-responsive-16by9
+                iframe.embed-responsive-item src="https://www.youtube.com/embed/-9DXoSEdNoc?start=148" frameborder="0" allowfullscreen
+        //.row
+        //  .col-lg-9.col-md-9.col-sm-12.col
+        //    h2.section-heading
+        //      | ready for decentralized edge access
+        //    h3.section-subheading
+        //      p
+        //        | Korhal Carrier is an 
+        //        Open cloud microservices allow you to manage millions of devices with a real time asynchronous 
+        //        | message queue over the mqtt protocol. Factory activation, monitoring and configuration are pluggable 
+        //        | microservices on both cloud and device, so you can mix and match with any other service. 
         .row
           .col-lg-9.col-md-9.col-sm-12.col
             h2.section-heading
