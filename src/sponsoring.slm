@@ -13,8 +13,8 @@ html lang="en"
               | Get in touch with Internet of Things Talent right in their most engaged moment.
             h3.section-subheading
               p
-                | If you're an established IoT company or a startup, aquiring top talent is a 
-                | challange. Become a gold sponsor to get your name and logo on github and the frontpage of every conference slide deck 
+                | If you're an established IoT company or a startup, acquiring top talent is a 
+                | challenge. Become a gold partner to get your name and logo on github and the frontpage of every conference slide deck 
                 | presented to techies. Some of which might just be your next hire. 
             script type="text/javascript" language="javascript"
               // Email obfuscator script 2.1 by Tim Williams, University of Arizona
@@ -46,11 +46,11 @@ html lang="en"
               | What we're doing with the money
             h3.section-subheading
               p
-                | Proprietary IoT platforms are costly, defocused and create more problems then they solve in a world where over 
+                | Proprietary IoT platforms are costly, defocused and create more problems than they solve in a world where over 
                 | 14 thousand people contribute to the linux kernel alone. We are creating korhal as complete free and 
                 | open source community to help companies build risk-free secure and quick updates for their IoT 
                 | devices. Korhal must remain free and open in order to fundamentally change the Internet of Things 
-                | as an industry, and as a result we rely on sponsoring and grants to support the project 
+                | as an industry, and as a result we rely on partnering and grants to support the project 
         .row
           .col-lg-9.col-md-9.col-sm-12.col
             h2.section-heading
@@ -59,7 +59,7 @@ html lang="en"
               p
                 | Korhal aims to become the docker of Iot, to grow into a standard deployment tool that significantly offsets 
                 | the cost of IoT updates. Join early to gain a competitive edge in being able to deliver features much quicker 
-                | than any other company having to deal with full system updates. Becoming a sponsor guarantees tools will come 
+                | than any other company having to deal with full system updates. Becoming a partner guarantees tools will come 
                 | to your preferred platform first, and gives you significantly influence in which direction we're going as a project. 
 
 
