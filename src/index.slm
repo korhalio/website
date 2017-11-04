@@ -49,6 +49,8 @@ html lang="en"
           .col-lg-12.col-md-12.col-sm-12.col
             h3.section-subheading
               div.embed-responsive.embed-responsive-16by9
+                iframe.embed-responsive-item src="https://media.ccc.de/v/ASG2017-108-kubernetes_for_toasters/oembed" frameborder="0" allowfullscreen
+              div.embed-responsive.embed-responsive-16by9
                 iframe.embed-responsive-item src="https://www.youtube.com/embed/-9DXoSEdNoc?start=148" frameborder="0" allowfullscreen
         //.row
         //  .col-lg-9.col-md-9.col-sm-12.col
