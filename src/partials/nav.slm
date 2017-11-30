@@ -12,8 +12,8 @@
       li.hidden
         a href="#page-top"
       li
-        a.page-scroll  href="/sponsoring.html"
-          | Corporate Partnerships
+        a.page-scroll  href="/whitepaper.pdf"
+          | Whitepaper
       li
         a.page-scroll  href="https://github.com/korhalio"
           | Open Source
