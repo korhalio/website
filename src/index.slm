@@ -9,14 +9,14 @@ html lang="en"
       .container
         .row
           .col-lg-7.col-md-7.col-sm-12.col
-            h2.section-heading
-              | Upgrade your embedded infrastructure to a new generation af IoT platforms.
+            h1.hero-claim
+              | Upgrade your embedded infrastructure to a new generation of IoT platforms.
             //h3.section-subheading
             //  p
-            //    | korhal is a free and open source end to end platform for IoT developers dealing with 
-            //    | <strong> updates, configuration, monitoring, 
-            //    | </strong> and
-            //    | <strong> decentralized networking </strong> 
+            //    . korhal is a free and open source end to end platform for IoT developers dealing with
+            //    . <strong> updates, configuration, monitoring,
+            //    . </strong> and
+            //    . <strong> decentralized networking </strong>
             //    | of millions of devices on earth or in space.
             a.page-scroll.btn.btn-xl href="/signup.html"
               | Get Korhal
@@ -32,18 +32,18 @@ html lang="en"
               | decentralized realtime fleet managment
             h3.section-subheading
               p
-                | Joining the decentralized Korhal Carrier Network enables real time interaction 
-                | with your device fleet even through double-nat and poorly configured uplinks. 
-                | Access business critical realtime metrics, crash reports, usage information, uptime statistics 
-                | through the <strong> Nexus </strong> and allow your support agents, partners and engineers to react right in the moment it happens.
+                . Joining the decentralized Korhal Carrier Network enables real time interaction
+                . with your device fleet even through double-nat and poorly configured uplinks.
+                . Access business critical realtime metrics, crash reports, usage information,
+                . uptime statistics through the <strong> Nexus </strong> and allow your support
+                | agents, partners and engineers to react right in the moment it happens.
             img.img-fluid src="/img/screenshot-${this.version}.jpg"
-            p style='margin-top:4em'
-             a.page-scroll.btn.btn-xl href="/signup.html"
-               | Get Korhal Nexus for Linux
+            a.page-scroll.btn.btn-xl.call-to-action href="/signup.html"
+              | Get Korhal Nexus for Linux
 
 
 
-    section#bolter
+    section.section-dark#bolter
       .container
         .row
           .col-lg-12.col-md-12.col-sm-12.col
@@ -51,15 +51,14 @@ html lang="en"
               | safe, secure and fast partial container application updates
             h3.section-subheading
               p
-                | Enable new business models through safe and secure differential updates on linux devices 
-                | without changing to new hardware. 
-                | Deploy containers, just like docker, but without the resource requirements. 
-                | Swap your current cloud for a new one or add interoperability layers from the archon container store. 
-                | Bolter compresses executables by up to 95%, allowing more stuff to run on the same hardware. 
+                . Enable new business models through safe and secure differential updates on linux
+                . devices without changing to new hardware. Deploy containers, just like docker, but
+                . without the resource requirements. Swap your current cloud for a new one or add
+                . interoperability layers from the archon container store. Bolter compresses
+                | executables by up to 95%, allowing more stuff to run on the same hardware.
             img.img-fluid src="/img/archon-${this.version}.png"
-            p style='margin-top:4em'
-             a.page-scroll.btn.btn-xl href="/signup.html"
-               | Get Korhal Archon for Linux
+            a.page-scroll.btn.btn-xl.call-to-action href="/signup.html"
+              | Get Korhal Archon for Linux
 
 
 
@@ -72,14 +71,12 @@ html lang="en"
               | We're open source <3
         .row
           .col-lg-12.col-md-12.col-sm-12.col
-            h3.section-subheading
-              div.embed-responsive.embed-responsive-16by9
-                iframe.embed-responsive-item src="https://media.ccc.de/v/ASG2017-108-kubernetes_for_toasters/oembed" frameborder="0" allowfullscreen
-              div.embed-responsive.embed-responsive-16by9
-                iframe.embed-responsive-item src="https://www.youtube.com/embed/-9DXoSEdNoc?start=148" frameborder="0" allowfullscreen
-            p style='margin-top:4em'
-             a.page-scroll.btn.btn-xl href="https://github.com/korhalio/"
-               | Gimme the code
+            .embed-responsive.embed-responsive-16by9
+              iframe.embed-responsive-item src="https://media.ccc.de/v/ASG2017-108-kubernetes_for_toasters/oembed" frameborder="0" allowfullscreen
+            .embed-responsive.embed-responsive-16by9
+              iframe.embed-responsive-item src="https://www.youtube.com/embed/-9DXoSEdNoc?start=148" frameborder="0" allowfullscreen
+            a.page-scroll.btn.btn-xl.call-to-action href="https://github.com/korhalio/"
+              | Gimme the code
 
 
     footer
@@ -97,9 +94,7 @@ html lang="en"
     | window.dataLayer = window.dataLayer || [];
     | function gtag(){dataLayer.push(arguments);}
     | gtag('js', new Date());
-  
+
     | gtag('config', 'UA-70973668-3');
 
   script src=("app-" + this.version + ".js")
-
-
