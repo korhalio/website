@@ -1,0 +1,39 @@
+doctype html
+html lang="en"
+  = partial('partials/head')
+  body#page-top.index
+    nav#mainNav.navbar.navbar-default.navbar-custom.navbar-fixed-top
+      = partial ('partials/nav')
+
+    section#intro style='margin:0; padding:60px; background-image: url("/img/bg-${this.version}.jpg");'
+
+    section#carrier
+      .container
+        .row
+          .col-lg-12.col-md-12.col-sm-12.col
+            h2.section-heading
+              | decentralized realtime fleet managment
+            p
+              #mc_embed_signup
+                form action="https://korhal.us17.list-manage.com/subscribe/post?u=4efd024f4d209c6eb40082b93&amp;id=2874c5afb0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate=true
+                  .form-group
+                    label for="mce-EMAIL"
+                      |Subscribe to get notified of product launches
+                    input.form-control type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required=true
+                    div style="position: absolute; left: -5000px;" aria-hidden="true"
+                      input type="text" name="b_4efd024f4d209c6eb40082b93_2874c5afb0" tabindex="-1" value=""
+                  input.btn.btn-primary type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  script async=true src="https://www.googletagmanager.com/gtag/js?id=UA-70973668-3"
+  script
+    | window.dataLayer = window.dataLayer || [];
+    | function gtag(){dataLayer.push(arguments);}
+    | gtag('js', new Date());
+  
+    | gtag('config', 'UA-70973668-3');
+
+  script src=("app-" + this.version + ".js")
+
+

@@ -1,8 +1,9 @@
 global.jQuery = require("jquery");
 var $ = global.jQuery(window);
 
-
 require ('../node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js');
+require ('../node_modules/bootstrap-slider/dist/bootstrap-slider.min.js');
+
 
 (function($) {
     "use strict"; // Start of use strict
@@ -35,6 +36,19 @@ require ('../node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js');
             top: 100
         }
     })
+
+
+  $('#ex1').slider({
+    formatter: function(value) {
+      if (value < 1) {
+        return "Less than 1000 devices";
+      } else if (value < 10) {
+        return "Over one million devices";
+      } else {
+        return (value * 1000) + " devices";
+      }
+    }
+});
 
 })(jQuery); // End of use strict
 
