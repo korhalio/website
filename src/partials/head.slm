@@ -12,3 +12,6 @@ head
   link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700' rel='stylesheet' type='text/css'
 
   link rel="stylesheet" href=("scss/app-" + this.version + ".css")
+
+  link rel="icon" type="image/png" href=("img/favicon-32x32-" + this.version + ".png") sizes="32x32"
+  link rel="icon" type="image/png" href=("img/favicon-16x16-" + this.version + ".png") sizes="16x16"
