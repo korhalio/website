@@ -3,78 +3,116 @@ html lang="en"
   = partial('partials/head')
   body#page-top.index
     nav#mainNav.navbar.navbar-default.navbar-custom.navbar-fixed-top
-      = partial ('partials/nav')
+      = partial('partials/nav')
 
     section#intro style='background-image: url("/img/bg-${this.version}.jpg");'
       .container
         .row
-          .col-lg-7.col-md-7.col-sm-12.col
+          .col.col-lg-7.col-md-7.col-sm-12
             h1.hero-claim
               | Upgrade your embedded infrastructure to a new generation of IoT platforms.
-            //h3.section-subheading
-            //  p
-            //    . korhal is a free and open source end to end platform for IoT developers dealing with
-            //    . <strong> updates, configuration, monitoring,
-            //    . </strong> and
-            //    . <strong> decentralized networking </strong>
-            //    | of millions of devices on earth or in space.
+          //  p
+          //    . korhal is a free and open source end to end platform for IoT developers dealing with
+          //    . <strong> updates, configuration, monitoring,
+          //    . </strong> and
+          //    . <strong> decentralized networking </strong>
+          //    | of millions of devices on earth or in space.
             a.page-scroll.btn.btn-xl href="/signup.html"
               | Get Korhal
 
-          .col-md-5.col-md-5.col-sm-12.col.hidden-sm.hidden-xs style='text-align:center'
+          .col.col-md-5.col-sm-12.hidden-sm.hidden-xs style='text-align:center'
             img.img-fluid src="/img/cargoshuttle-${this.version}.png"
 
     section#carrier
       .container
         .row
-          .col-lg-12.col-md-12.col-sm-12.col
+          .col.col-md-6.col-sm-6.col.col-lg-6.col-lg-push-6.col-md-push-6.col-sm-push-6
             h2.section-heading
-              | decentralized realtime fleet managment
-            h3.section-subheading
-              p
-                . Joining the decentralized Korhal Carrier Network enables real time interaction
-                . with your device fleet even through double-nat and poorly configured uplinks.
-                . Access business critical realtime metrics, crash reports, usage information,
-                . uptime statistics through the <strong> Nexus </strong> and allow your support
-                | agents, partners and engineers to react right in the moment it happens.
-            img.img-fluid src="/img/screenshot-${this.version}.jpg"
-            a.page-scroll.btn.btn-xl.call-to-action href="/signup.html"
+              | Decentralized realtime fleet managment.
+            p.section-text
+              . Joining the decentralized Korhal Carrier Network enables real time interaction
+              . with your device fleet even through double-nat and poorly configured uplinks.
+              . Access business critical realtime metrics, crash reports, usage information,
+              . uptime statistics through the <strong> Nexus </strong> and allow your support
+              | agents, partners and engineers to react right in the moment it happens.
+            a.page-scroll.btn.btn-xl.call-to-action href="#mc_embed_signup"
               | Get Korhal Nexus for Linux
-
+          .col.col-lg-6.col-md-6.col-sm-6.col-lg-pull-6.col-md-pull-6.col-sm-pull-6.col-narrow-r
+            .macos-window.macos-browser-window
+              .titlebar
+                .buttons
+                  .button.button-close
+                  .button.button-minimize
+                  .button.button-zoom
+                .addressbar
+                  | https://nexus.korhal.io/fleet/ad948fc1-29e0-4523-b243-06bdf957bee4
+              img.content-image src="/img/dashboard-${this.version}.png"
 
 
     section.section-dark#bolter
       .container
         .row
-          .col-lg-12.col-md-12.col-sm-12.col
+          .col.col-lg-6.col-md-6.col-sm-6
             h2.section-heading
-              | safe, secure and fast partial container application updates
-            h3.section-subheading
-              p
-                . Enable new business models through safe and secure differential updates on linux
-                . devices without changing to new hardware. Deploy containers, just like docker, but
-                . without the resource requirements. Swap your current cloud for a new one or add
-                . interoperability layers from the archon container store. Bolter compresses
-                | executables by up to 95%, allowing more stuff to run on the same hardware.
-            img.img-fluid src="/img/archon-${this.version}.png"
-            a.page-scroll.btn.btn-xl.call-to-action href="/signup.html"
+              | Safe, secure and fast partial container application updates.
+            p.section-text
+              . Enable new business models through safe and secure differential updates on linux
+              . devices without changing to new hardware. Deploy containers, just like docker, but
+              . without the resource requirements. Swap your current cloud for a new one or add
+              . interoperability layers from the archon container store. Bolter compresses
+              | executables by up to 95%, allowing more stuff to run on the same hardware.
+            a.page-scroll.btn.btn-xl.call-to-action href="#mc_embed_signup"
               | Get Korhal Archon for Linux
+          .col.col-lg-6.col-md-6.col-sm-6
+            .macos-window
+              .titlebar
+                .buttons
+                  .button.button-close
+                  .button.button-minimize
+                  .button.button-zoom
+                | korhal — bash
+              .content-text.content-dark.content-code
+                p
+                  span style="color:#38bf3b"
+                    . $
+                  | bolter run amazon-aws/aws-iot-connector --region eu-west-1
+                p
+                  . > receiving archon index ..
+                  span style="color:#38bf3b"
+                    | complete
+                p > 4 shards with 924Kb (downloading 2 new shards with 43Kb)
+                p > receiving shards from peers
+                p style="color:#1486dc"
+                  | &nbsp;&nbsp;70637d&shy;03280&shy;af6127&shy;aa1b664&shy;be4cfd&shy;
+                  | be1d9&shy;c0c8c
+                p style="color:#1486dc"
+                  | &nbsp;&nbsp;ccc639&shy;15b21&shy;fb10cd&shy;e30855e&shy;f75596&shy;
+                  | c2564&shy;c3280
+                p Welcome to AWS IoT
+                p Connecting to the aws cloud...
 
 
 
-
-    section#archon
+    section.section-darker#archon
       .container
         .row
-          .col-lg-12.col-md-12.col-sm-12.col
+          .col.col-lg-12.col-md-12.col-sm-12
             h2.section-heading
-              | We're open source <3
+              | We're open source. <3
         .row
-          .col-lg-12.col-md-12.col-sm-12.col
-            .embed-responsive.embed-responsive-16by9
-              iframe.embed-responsive-item src="https://media.ccc.de/v/ASG2017-108-kubernetes_for_toasters/oembed" frameborder="0" allowfullscreen
-            .embed-responsive.embed-responsive-16by9
-              iframe.embed-responsive-item src="https://www.youtube.com/embed/-9DXoSEdNoc?start=148" frameborder="0" allowfullscreen
+          .col.col-lg-6.col-md-6.col-sm-6
+            .panel
+              .panel-body
+                .embed-responsive.embed-responsive-16by9
+                  iframe.embed-responsive-item src="https://media.ccc.de/v/ASG2017-108-kubernetes_for_toasters/oembed" frameborder="0" allowfullscreen
+              .panel-footer Korhal at All Systems Go
+          .col.col-lg-6.col-md-6.col-sm-6
+            .panel
+              .panel-body
+                .embed-responsive.embed-responsive-16by9
+                  iframe.embed-responsive-item src="https://www.youtube.com/embed/-9DXoSEdNoc?start=148" frameborder="0" allowfullscreen
+              .panel-footer Korhal at Rust Berlin
+          .col.col-lg-12.col-md-12.col-sm-12
             a.page-scroll.btn.btn-xl.call-to-action href="https://github.com/korhalio/"
               | Gimme the code
 
@@ -82,8 +120,27 @@ html lang="en"
     footer
       .container
         .row
-          .col-md-4
-            ul.list-inline.quicklinks
+          .col.col-lg-7.col-md-7.col-sm-7.col.col-lg-push-3.col-md-push-3.col-sm-push-3
+            h2.section-heading
+              | Decentralized realtime fleet managment.
+            p Subscribe to get notified of product launches.
+            #mc_embed_signup
+              form action="https://korhal.us17.list-manage.com/subscribe/post?u=4efd024f4d209c6eb40082b93&amp;id=2874c5afb0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate=true
+                .input-group
+                  input.form-control type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required=true
+                  div style="position: absolute; left: -5000px;" aria-hidden="true"
+                    input type="text" name="b_4efd024f4d209c6eb40082b93_2874c5afb0" tabindex="-1" value=""
+                  span.input-group-btn
+                    input.btn.btn-primary.submit type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"
+          .col.col-lg-3.col-md-3.col-sm-3.col-lg-pull-7.col-md-pull-7.col-sm-pull-7
+            .brand-footer.page-scroll href="/"
+              img.brand-logo src=('/img/logo-' + this.version + '.png')
+              span
+                | korhal.io
+            ul.quicklinks
+              li
+                a href='https://github.com/korhalio'
+                  | GitHub
               li
                 a href='/imprint.html'
                   | Legal

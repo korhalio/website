@@ -1,8 +1,9 @@
 @import "node_modules/bootstrap-sass/assets/stylesheets/_bootstrap";
 @import "node_modules/font-awesome/scss/font-awesome.scss";
 @import "node_modules/bootstrap-slider/src/sass/bootstrap-slider.scss";
-@import "variables.scss";
-@import "mixins.scss";
+@import "variables";
+@import "mixins";
+@import "macosWindow";
 
 // Global Components
 
@@ -255,9 +256,9 @@ section {
     }
     h2.section-heading {
         text-align: left;
-        font-size: 40px;
+        font-size: 36px;
         margin-top: 0;
-        margin-bottom: 20px;
+        margin-bottom: 24px;
         font-weight: normal;
     }
     h3.section-subheading {
@@ -268,8 +269,17 @@ section {
         text-transform: none;
         margin-bottom: 75px;
     }
+    p.section-text {
+        font-size: 18px;
+    }
     &.section-dark {
         background-color: $gray-lighter;
+    }
+    &.section-darker {
+        background-color: $gray-light;
+        h1, h2, h3, p {
+            color: white;
+        }
     }
 }
 
@@ -636,18 +646,32 @@ section#contact {
 // Footer
 
 footer {
-    padding: 25px 0;
+    padding: {
+        top: 25px;
+        bottom: 100px;
+    }
     background-color: $gray-dark;
+    h2.section-heading, label {
+        color: white;
+        margin-bottom: 16px;
+    }
+    p {
+        color: white;
+        margin-left: 2px;
+    }
     span.copyright {
         line-height: 40px;
         @include heading-font;
         text-transform: none;
     }
     ul.quicklinks {
-        margin-bottom: 0;
-        line-height: 40px;
+        line-height: 32px;
         @include heading-font;
         text-transform: none;
+        margin-top: 6px;
+        li {
+            margin-left: 2px;
+        }
     }
 }
 
@@ -810,7 +834,6 @@ body {
     margin: 0 auto;
 }
 
-
 .img-fluid {
     max-width: 100%;
     height: auto;
@@ -821,25 +844,55 @@ body {
         color: #000;
     }
     .submit {
+        height: 34px;
     }
 }
 
 .call-to-action {
-    margin-top: 4rem;
+    margin: {
+        top: 26px;
+        bottom: 40px;
+    }
+}
+
+.brand-footer {
+    color: $theme-primary;
+    margin-top: 50px;
+
+    .brand-logo {
+        width: 32px;
+        height: 32px;
+        margin-top: -9px;
+        margin-right: 9px;
+    }
+
+    span {
+        font-size: 18pt;
+        font-weight: 300;
+    }
 }
 
 @media (min-width: 768px) {
-.container {
-    width: 750px;
-}
+    .container {
+        width: 750px;
+    }
+    .col-narrow-l {
+        padding-left: 50px;
+    }
+    .col-narrow-r {
+        padding-right: 50px;
+    }
+    .brand-footer {
+        margin-top: 20px;
+    }
 }
 @media (min-width: 992px) {
-.container {
-    width: 970px;
-}
+    .container {
+        width: 970px;
+    }
 }
 @media (min-width: 1200px) {
-.container {
-    width: 1028px;
-}
+    .container {
+        width: 1028px;
+    }
 }
