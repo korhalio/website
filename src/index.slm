@@ -132,6 +132,36 @@ html lang="en"
                     input type="text" name="b_4efd024f4d209c6eb40082b93_2874c5afb0" tabindex="-1" value=""
                   span.input-group-btn
                     input.btn.btn-primary.submit type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"
+              //form
+              //  .row
+              //    .col.col-lg-6.col-md-6.col-sm-6
+              //      .form-group
+              //        label for="form-name" Name
+              //        input.form-control type="text" name="form-name" placeholder="Name"
+              //      .form-group
+              //        label for="form-phone" Phone
+              //        input.form-control type="text" name="form-phone" placeholder="Phone number"
+              //      .form-group
+              //        label for="form-email" Email
+              //        input.form-control type="text" name="form-email" placeholder="Email address"
+              //      .form-check
+              //        .form-check-label
+              //          input.form-check-input#form-newsletter type="checkbox" checked=true
+              //          |  send me updates about korhal.io
+              //    .col.col-lg-6.col-md-6.col-sm-6
+              //      .form-group
+              //        label for="form-contact-type" How may we contact you?
+              //        select.form-control#form-contact-type
+              //          option Email
+              //          option Phone
+              //          option Meet the team
+              //      .form-group
+              //        label for="form-device-no" How many devices do you have?
+              //        input.form-control type="text" name="form-device-no"
+              //      .form-group
+              //        label for="form-message" Message (optional)
+              //        textarea.form-control#form-message rows="3"
+              //  button.btn.btn-primary.btn-lg type="submit" Submit
           .col.col-lg-3.col-md-3.col-sm-3.col-lg-pull-7.col-md-pull-7.col-sm-pull-7
             .brand-footer.page-scroll href="/"
               img.brand-logo src=('/img/logo-' + this.version + '.png')

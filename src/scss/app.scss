@@ -651,13 +651,19 @@ footer {
         bottom: 100px;
     }
     background-color: $gray-dark;
-    h2.section-heading, label {
+    h2.section-heading {
         color: white;
         margin-bottom: 16px;
     }
     p {
         color: white;
         margin-left: 2px;
+    }
+    label, .form-check-label {
+        color: white;
+    }
+    #form-newsletter {
+      margin-bottom: 12px;
     }
     span.copyright {
         line-height: 40px;
