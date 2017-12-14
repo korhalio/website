@@ -6,7 +6,8 @@ var git         = require('gulp-git');
 var rename      = require("gulp-rename");
 var gulpif      = require('gulp-if');
 var uglify      = require('gulp-uglify');
-var s3          = require('gulp-s3-upload')();
+var fs          = require('fs');
+var s3          = require('gulp-s3-publish');
 var sassVar     = require('gulp-sass-variables');
 var merge       = require('merge-stream');
 var marked      = require('marked');
@@ -86,20 +87,16 @@ function task_copy() {
 
 gulp.task('default', gulp.series(task_tag, task_sass, task_browserify, task_slm, task_copy()));
 
+aws = JSON.parse(fs.readFileSync('./aws.json'));
 
 gulp.task("deploy",
     gulp.series(function upload_all(){
         return gulp.src("./dist/**")
-        .pipe(gulpif('!*index.html', s3({
-            Bucket: 'www.korhal.io',
-            ACL:    'public-read'
-        })));
+        .pipe(gulpif('!*index.html', s3(aws, { concurrency: 5 })))
     },
     function upload_index() {
         return gulp.src("./dist/**")
-        .pipe(gulpif('*index.html', s3({
-            Bucket: 'www.korhal.io',
-            ACL:    'public-read'
-        })));
+        .pipe(gulpif('*index.html', s3(aws, {headers:{
+          'CacheControl': 'no-cache, no-store, must-revalidate'} })))
     }
 ));
